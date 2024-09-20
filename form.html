@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MillionDollarSaaS.io - Partnership Request</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main-content"></div>  <!-- Special form will be injected here -->
+
+    <script type="module">
+        import { renderHeader } from './components/header.js';
+        import { renderFooter } from './components/footer.js';
+        import { renderPartnershipForm } from './components/form.js';  <!-- Different form for partnerships -->
+
+        document.addEventListener('DOMContentLoaded', function () {
+            renderHeader();  // Render header
+            renderFooter();  // Render footer
+            renderPartnershipForm();  // Render the specialized partnership form
+        });
+    </script>
+</body>
+</html>

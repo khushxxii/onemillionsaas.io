@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MillionDollarSaaS.io - About Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main content will be dynamically injected here -->
+    <div id="main-content"></div>
+
+    <script type="module">
+        import { renderHeader } from './components/header.js';
+        import { renderFooter } from './components/footer.js';
+        import { renderHowItWorks } from './components/howItWorks.js';
+
+        document.addEventListener('DOMContentLoaded', function () {
+            renderHeader();  // Render the header
+            renderFooter();  // Render the footer
+            renderHowItWorks();  // Render the "How It Works" section
+        });
+    </script>
+</body>
+</html>

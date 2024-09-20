@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MillionDollarSaaS.io - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main-content"></div>  <!-- Contact form will be injected here -->
+
+    <script type="module">
+        import { renderHeader } from './components/header.js';  
+        import { renderFooter } from './components/footer.js';  
+        import { renderContactForm } from './components/form.js'; 
+
+        document.addEventListener('DOMContentLoaded', function () {
+            renderHeader();  // Render header
+            renderFooter();  // Render footer
+            renderContactForm();  // Render the contact form
+        });
+    </script>
+</body>
+</html>
